@@ -18,7 +18,7 @@ if [ "$OS" == "debian" ]; then
 elif [ "$OS" == "redhat" ]; then
     echo "Red Hat ailəsindən sistem tapıldı."
     yum install epel-release -y
-    yum install automake jq libtool openssl-devel make gcc pkgconfig git jansson-devel file-devel -y
+    yum install automake jq libtool openssl-devel make gcc pkgconfig git jansson-devel -y
 fi
 
 # YARA installation
