@@ -39,7 +39,13 @@ cd /usr/local
 
 git clone https://github.com/Neo23x0/signature-base.git
 
+#Update And Compile Rules
 cp yara_update_rules.sh /usr/share/yara/
 cd /usr/share/yara/
 chmod +x /usr/share/yara/yara_update_rules.sh
 /bin/bash /usr/share/yara/yara_update_rules.sh
+
+#test yara
+cd /tmp/
+wget https://secure.eicar.org/eicar.com
+/usr/share/yara/yara-4.2.3/yara -C -w -r -f -m /usr/local/signature-base/yara_base_ruleset_compiled.yar eicar.com 
