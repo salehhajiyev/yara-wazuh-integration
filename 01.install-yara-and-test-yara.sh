@@ -25,7 +25,7 @@ fi
 echo "YARA install olunur..."
 mkdir -p /usr/share/yara
 cd /usr/share/yara
-wget https://github.com/VirusTotal/yara/archive/refs/tags/v4.5.0.zip
+wget https://github.com/VirusTotal/yara/archive/refs/tags/v4.5.0.tar.gz
 tar -xzf v4.5.0.tar.gz
 cd yara-4.5.0
 ./bootstrap.sh
